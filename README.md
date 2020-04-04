@@ -1,0 +1,2 @@
+# Competitive_Programming
+競技プログラミング日記的な
