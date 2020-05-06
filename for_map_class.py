@@ -1,6 +1,6 @@
 class fizzbuzz:
     """fizzbuzz問題を大げさにクラス化して、
-       高級関数mapが使いたいだけの自己満足奴"""
+       高階関数mapが使いたいだけの自己満足奴"""
 
     # @staticmethod # インスタンス化しない時にこれつけるといける
     def fb_func(self, n):   # クラス内で関数呼びだしされたければ、selfつけるべし。
