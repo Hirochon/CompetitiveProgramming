@@ -8,3 +8,10 @@ services:
         ports:
             - 8888:8888
         container_name: competitive_nb
+    python:
+        build: ./
+        tty: true
+        stdin_open: true
+        volumes:
+            - "./:/code/"
+        container_name: python3
