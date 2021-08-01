@@ -1,6 +1,6 @@
 version: "3"
 services:
-    jupyter: 
+    jupyter:
         image: jupyter/datascience-notebook
         working_dir: /code
         volumes:
@@ -15,3 +15,12 @@ services:
         volumes:
             - "./:/code/"
         container_name: python3
+    c920:
+        build:
+            context: ./
+            dockerfile: Dockerfile_c
+        tty: true
+        stdin_open: true
+        volumes:
+            - "./:/code/"
+        container_name: c920
