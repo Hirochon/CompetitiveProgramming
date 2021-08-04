@@ -24,3 +24,4 @@ services:
         volumes:
             - "./:/code/"
         container_name: c920
+        working_dir: /code
