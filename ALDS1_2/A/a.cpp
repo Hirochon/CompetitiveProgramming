@@ -4,13 +4,10 @@ static const int MAX = 100;
 
 void callList(int *A, int N) {
     for (int i = 0; i < N; i++) {
-        if (i != N-1) {
-            printf("%d ", A[i]);
-        }
-        else {
-            printf("%d\n", A[i]);
-        }
+        if (i) cout << " ";
+        cout << A[i];
     }
+    cout << endl;
 }
 
 int bubbleSort(int *A, int N) {
