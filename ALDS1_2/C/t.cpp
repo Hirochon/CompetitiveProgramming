@@ -1,8 +1,10 @@
 #include <iostream>
+#include <string>
+#include <vector>
 using namespace std;
 static const int MAX = 36;
 
-int bubbleSort(char A[MAX][3], int N) {
+int bubbleSort(vector<string> &A, int N) {
     int swapNum = 0;
     int tmp1, tmp2;
     for (int j = N-1; j > 0; j--) {
@@ -18,7 +20,7 @@ int bubbleSort(char A[MAX][3], int N) {
     return swapNum;
 }
 
-int selectionSort(char A[MAX][3], int N) {
+int selectionSort(vector<string> &A, int N) {
     int swapNum = 0;
     int minj, tmp1, tmp2;
     for (int i = 0; i < N; i++) {
@@ -38,7 +40,7 @@ int selectionSort(char A[MAX][3], int N) {
     return swapNum;
 }
 
-bool isStable(char A[MAX][3], char B[MAX][3], int N) {
+bool isStable(vector<string> &A, vector<string> &B, int N) {
     for (int i = 0; i < N; i++) {
         if (A[i][1] != B[i][1] || A[i][0] != B[i][0]) {
             return false;
@@ -48,36 +50,39 @@ bool isStable(char A[MAX][3], char B[MAX][3], int N) {
 }
 
 int main() {
-    int N;
-    char A[MAX][3], B[MAX][3];
-    cin >> N;
-    for (int i = 0; i < N; i++) {
-        cin >> A[i];
-        for (int j = 0; j < 2; j++) {
-            B[i][j] = A[i][j];
-        }
+    int n;
+    string t;
+    vector<string> arr1, arr2;
+
+    cin >> n;
+    for (int i = 0; i < n; i++) {
+        cin >> t;
+        arr1.push_back(t);
+        arr2.push_back(t);
     }
 
-    bubbleSort(A, N);
-    selectionSort(B, N);
+    bubbleSort(arr1, n);
+    selectionSort(arr2, n);
 
-    for (int i = 0; i < N; i++) {
-        cout << A[i];
-        if (i != N-1) {
+    for (int i = 0; i < n; i++) {
+        // if (i) cout << " ";
+        cout << arr1[i];
+        if (i != n-1) {
             cout << " ";
         }
     }
     cout << endl;
     cout << "Stable" << endl;
 
-    for (int i = 0; i < N; i++) {
-        cout << B[i];
-        if (i != N-1) {
+    for (int i = 0; i < n; i++) {
+        // if (i) cout << " ";
+        cout << arr2[i];
+        if (i != n-1) {
             cout << " ";
         }
     }
     cout << endl;
-    if (!isStable(A, B, N)) {
+    if (!isStable(arr1, arr2, n)) {
         cout << "Not stable" << endl;
     }
     else {
