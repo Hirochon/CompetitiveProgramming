@@ -15,7 +15,7 @@ services:
         volumes:
             - "./:/code/"
         container_name: python3
-    c920:
+    cpp:
         build:
             context: ./
             dockerfile: Dockerfile_c
@@ -23,5 +23,5 @@ services:
         stdin_open: true
         volumes:
             - "./:/code/"
-        container_name: c920
+        container_name: cpp
         working_dir: /code
