@@ -5,18 +5,18 @@ S = list(map(int, input().split()))
 
 ## ズレが0だと最大indexに範囲が及ばない
 def binarySearch(x: int) -> bool:
-    min = 0
-    max = n - 1
-    while min - max != 1:
-        middle = (min + max) // 2
-        if S[middle] == x:
+    minI = 0
+    maxI = n - 1
+    while minI - maxI != 1:
+        middleI = (minI + maxI) // 2
+        if S[middleI] == x:
             return True
-        elif S[middle] < x:
-            ## ターゲットとする値より大きければ、
+        elif S[middleI] < x:
+            ## ターゲットとする値より当てずっぽ値が小さければ、
             ## 最小を中間の値+1のindexに変更
-            min = middle+1
+            minI = middleI+1
         else:
-            ## ターゲットとする値より小さければ、
+            ## ターゲットとする値より当てずっぽ値が大きければ、
             ## 最大を中間の値-1のindexに変更
-            max = middle-1
+            maxI = middleI-1
     return False
