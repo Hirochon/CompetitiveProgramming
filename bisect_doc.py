@@ -23,4 +23,9 @@ print(bisect.bisect_right(S, 9)) # 5
 ## How to decide using bisect or binary_search        ##
 ## 目標とする値がその配列にあるかどうか →　自作binary_search ##
 ## 目標とする値と配列のindexで操作したい　→ bisect        　##
+## え、てか、ぜんぶbisectでよくね？                    　　##
 ########################################################
+
+T = [1, 1, 1, 2, 2, 2, 3, 3, 3]
+print(bisect.bisect_left(T, 2)) # 3
+print(bisect.bisect_right(T, 2)) # 6
