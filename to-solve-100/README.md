@@ -8,7 +8,8 @@ https://qiita.com/e869120/items/eb50fdaece12be418faa#2-3-%E5%88%86%E9%87%8E%E5%8
 
 ### 1月
 
-- [x] [24: 2022-01-09](./24/twenty_one.py)
+- [x] [25: 2022-01-23](./25/twenty_five.py)
+- [x] [24: 2022-01-09](./24/twenty_four.py)
 
 ### 12月
 
