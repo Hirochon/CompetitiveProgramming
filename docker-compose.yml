@@ -15,6 +15,15 @@ services:
         volumes:
             - "./:/code/"
         container_name: python3
+    pypy:
+        build:
+            context: ./
+            dockerfile: Dockerfile_pypy
+        tty: true
+        stdin_open: true
+        volumes:
+            - "./:/code/"
+        container_name: pypy3
     cpp:
         build:
             context: ./
