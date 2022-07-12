@@ -6,6 +6,10 @@ https://qiita.com/e869120/items/eb50fdaece12be418faa#2-3-%E5%88%86%E9%87%8E%E5%8
 
 ## いつ何を解いたか！
 
+### 7月
+
+- [x] [35: 2022-07-13](./35/thirty-five.py)
+
 ### 6月
 
 - [x] [34: 2022-06-26](./34/thirty-four.py)
