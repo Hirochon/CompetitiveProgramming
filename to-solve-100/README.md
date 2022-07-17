@@ -8,6 +8,7 @@ https://qiita.com/e869120/items/eb50fdaece12be418faa#2-3-%E5%88%86%E9%87%8E%E5%8
 
 ### 7月
 
+- [x] [36: 2022-07-17](./36/thirty-six.py)
 - [x] [35: 2022-07-13](./35/thirty-five.py)
 
 ### 6月
